@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'build .'
+                echo 'build ..'
                 sleep 5
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy for development') {
             when {
-                branch 'development'
+                branch 'development..'
             }
             steps {
                  echo 'dev branch deployment ...'
